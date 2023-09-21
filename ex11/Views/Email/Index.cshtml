@@ -1,0 +1,43 @@
+﻿
+
+@Model IEnumerable<ex11.Models.MailInfo>
+
+    @{
+       
+        ViewBag.Title = "Index";
+    }
+
+    <h2>Index</h2>
+    <form action="/Email/Send" method="post">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Form</label>
+            <input type="text" class="form-control" name=From aria-describedby="emailHelp" />
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">To</label>
+            <input type="text" class="form-control" name=To>
+
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Subject</label>
+            <input type="text" class="form-control" name=Subject>
+
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Body</label>
+            <textarea class="form-control" name=Body rows="3"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="exampleFormControlFile1">Example file input</label>
+            <input type="file" class="form-control-file" name="exampleFormControlFile1">
+        </div>
+
+    
+        <button type="submit" class="btn btn-primary">Send</button>
+
+    </form>
+    </ex11.Models.MailInfo>
+
+

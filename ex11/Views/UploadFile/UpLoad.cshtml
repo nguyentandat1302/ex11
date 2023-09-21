@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "UpLoad";
+}
+
+<h2>Kết Quả UpLoad</h2>
+
+<div>
+    Hinh Anh
+    <img src="~/UpLoad/@ViewBag.FileNameImage" class="img-thumbnail"
+         style=" width: auto; height: auto"/>    
+    
+</div>
+
+<div>
+    Tai Lieu
+    <ul
+        <li>@ViewBag.FileName</li>
+        <li>@ViewBag.FileStyle</li>
+        <li>@ViewBag.FileSize</li>
+       <li
+           <a href ="~/UploadFile/@ViewBag.FileName">DownLoad</a>
+        </li>
+    </ul>
+
+
+</div>
+

@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<form action="/UploadFile/Upload" method="post" enctype="multipart/form-data">
+    <div class="mb-3">
+        <label for="formFile" class="form-label">Hình Ảnh</label>
+        <input class="form-control" type="file" name="image">
+    </div>
+    <div class="mb-3">
+        <label for="formFileMultiple" class="form-label">Tài Liệu</label>
+        <input class="form-control" type="file" name="document" multiple>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Upload</button>
+    
+</form>
